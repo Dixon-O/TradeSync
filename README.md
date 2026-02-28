@@ -1,8 +1,8 @@
-# 🔄 TradeSync
+# 🔄 DukaImara
 
 **Local-First POS & Business Hub for Informal Traders**
 
-TradeSync is a Progressive Web App (PWA) built for market vendors, spaza shops, and tuck shops operating in environments with unreliable connectivity and shared devices. It runs **100% offline**, syncs automatically when connectivity returns, and **never loses data**.
+DukaImara is a Progressive Web App (PWA) built for market vendors, spaza shops, and tuck shops operating in environments with unreliable connectivity and shared devices. It runs **100% offline**, syncs automatically when connectivity returns, and **never loses data**.
 
 ---
 
@@ -55,8 +55,8 @@ TradeSync is a Progressive Web App (PWA) built for market vendors, spaza shops, 
 ### Installation
 
 ```bash
-git clone git@github.com:Dixon-O/TradeSync.git
-cd TradeSync
+git clone git@github.com:Dixon-O/DukaImara.git
+cd DukaImara
 npm install
 ```
 
@@ -84,7 +84,7 @@ npm run preview
 ## 📁 Project Structure
 
 ```
-tradesync/
+DukaImara/
 ├── index.html                  # App shell (PIN screen, nav, modals)
 ├── package.json
 ├── vite.config.js
@@ -151,7 +151,7 @@ Every record includes sync metadata: `_hlc`, `_vectorClock`, `_deviceId`, `_tomb
 
 ## 🔄 Sync & Conflict Resolution
 
-TradeSync uses a **CRDT-based sync engine** for conflict-free data merging:
+DukaImara uses a **CRDT-based sync engine** for conflict-free data merging:
 
 1. **Field-level merge** — Different-field edits from separate devices are both preserved
 2. **Last-Writer-Wins (LWW)** — Same-field conflicts resolved via HLC timestamp
@@ -165,7 +165,7 @@ TradeSync uses a **CRDT-based sync engine** for conflict-free data merging:
 
 - Installable on any device (Android, iOS, desktop)
 - Full offline operation — all features work without internet
-- Service worker with versioned caching (`tradesync-v2`)
+- Service worker with versioned caching (`DukaImara-v2`)
 - Automatic sync queue flush on reconnect
 - Long offline session support (>24h warning, data always preserved)
 

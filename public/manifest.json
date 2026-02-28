@@ -1,13 +1,29 @@
 {
-    "name": "TradeSync",
-    "short_name": "TradeSync",
+    "name": "DukaImara",
+    "short_name": "DukaImara",
     "description": "Local-First POS & Business Hub for Informal Traders",
     "start_url": "/",
     "display": "standalone",
-    "background_color": "#0f172a",
-    "theme_color": "#0f172a",
     "orientation": "portrait-primary",
+    "background_color": "#0f172a",
+    "theme_color": "#6366f1",
+    "categories": [
+        "business",
+        "finance",
+        "productivity"
+    ],
     "icons": [
+        {
+            "src": "/icons/icon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any"
+        },
+        {
+            "src": "/icons/icon-72.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
         {
             "src": "/icons/icon-192.png",
             "sizes": "192x192",
@@ -17,16 +33,6 @@
             "src": "/icons/icon-512.png",
             "sizes": "512x512",
             "type": "image/png"
-        },
-        {
-            "src": "/icons/icon.svg",
-            "sizes": "any",
-            "type": "image/svg+xml"
         }
-    ],
-    "categories": [
-        "business",
-        "finance",
-        "productivity"
     ]
 }

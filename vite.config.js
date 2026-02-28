@@ -9,11 +9,19 @@ export default defineConfig({
     },
     server: {
         port: 5173,
+        hmr: {
+            host: 'localhost',
+            protocol: 'ws',
+            port: 5173,
+        },
         proxy: {
             '/api': {
                 target: 'http://localhost:3001',
                 changeOrigin: true,
             }
+        },
+        headers: {
+            'Service-Worker-Allowed': '/',
         }
     }
 });

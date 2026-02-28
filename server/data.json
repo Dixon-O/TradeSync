@@ -1,0 +1,149 @@
+{
+  "profiles": {
+    "cff4ead2-a8ec-4066-b25a-1152df989a61": {
+      "id": "cff4ead2-a8ec-4066-b25a-1152df989a61",
+      "name": "admin",
+      "pin": "1111",
+      "role": "admin",
+      "privileges": {
+        "canSell": true,
+        "canAddStock": true,
+        "canManageCredits": true,
+        "canViewReports": true,
+        "canManageDebits": true
+      },
+      "color": "#fb923c",
+      "createdAt": 1772096869402,
+      "_hlc": "",
+      "_lastSynced": 1772096869436,
+      "_sourceDevice": "device-af99322b",
+      "_serverTimestamp": 1772096869436
+    }
+  },
+  "products": {
+    "86ff7bca-997f-4dd8-8a1e-ed623a0fc66b": {
+      "id": "86ff7bca-997f-4dd8-8a1e-ed623a0fc66b",
+      "stock": 98,
+      "_hlc": "mm38mrk6-0",
+      "_lastSynced": 1772096869436,
+      "_sourceDevice": "device-af99322b",
+      "_serverTimestamp": 1772096869436
+    },
+    "083ed8b9-ee87-4450-8863-67425f27fcdd": {
+      "id": "083ed8b9-ee87-4450-8863-67425f27fcdd",
+      "stock": 24,
+      "_hlc": "mm38dayf-0",
+      "_lastSynced": 1772097006371,
+      "_sourceDevice": "device-37a7fe1a",
+      "_serverTimestamp": 1772097006371
+    },
+    "691e804b-e2fb-49ef-9161-da3b4e70bb0d": {
+      "id": "691e804b-e2fb-49ef-9161-da3b4e70bb0d",
+      "stock": 12,
+      "_hlc": "mm38cyln-0",
+      "_lastSynced": 1772097006371,
+      "_sourceDevice": "device-37a7fe1a",
+      "_serverTimestamp": 1772097006371
+    },
+    "7982ca18-cb50-4bae-ac1a-c663b8cfe491": {
+      "id": "7982ca18-cb50-4bae-ac1a-c663b8cfe491",
+      "stock": 20,
+      "_hlc": "mm38cylf-0",
+      "_lastSynced": 1772097006372,
+      "_sourceDevice": "device-37a7fe1a",
+      "_serverTimestamp": 1772097006372
+    }
+  },
+  "sales": {
+    "2f6d8c3b-45ab-4ad2-a249-10ff7e4df437": {
+      "id": "2f6d8c3b-45ab-4ad2-a249-10ff7e4df437",
+      "items": [
+        {
+          "productId": "86ff7bca-997f-4dd8-8a1e-ed623a0fc66b",
+          "name": "bread",
+          "quantity": 1,
+          "price": 65,
+          "subtotal": 65
+        }
+      ],
+      "total": 65,
+      "paymentMethod": "credit",
+      "customerCreditId": null,
+      "profileId": "917ff3ca-cc8f-4f59-baca-0f2e847b6704",
+      "profileName": "alpha",
+      "saleTime": "2026-02-26T09:05:19.082Z",
+      "receiptId": "TS-MM38MRJD-B81B",
+      "_hlc": "mm38mrkd-0",
+      "_lastSynced": 1772096869436,
+      "_sourceDevice": "device-af99322b",
+      "_serverTimestamp": 1772096869436
+    },
+    "c78f4783-a5d8-43bf-b0a7-fd6125bf7117": {
+      "id": "c78f4783-a5d8-43bf-b0a7-fd6125bf7117",
+      "items": [
+        {
+          "productId": "7982ca18-cb50-4bae-ac1a-c663b8cfe491",
+          "name": "Cooking Oil 1L",
+          "quantity": 1,
+          "price": 320,
+          "subtotal": 320
+        },
+        {
+          "productId": "691e804b-e2fb-49ef-9161-da3b4e70bb0d",
+          "name": "Farm Eggs (Tray)",
+          "quantity": 1,
+          "price": 450,
+          "subtotal": 450
+        }
+      ],
+      "total": 770,
+      "paymentMethod": "cash",
+      "customerCreditId": null,
+      "profileId": "f97ee647-ec26-4b97-83cf-aef22ce83cdf",
+      "profileName": "minad",
+      "saleTime": "2026-02-26T08:57:41.648Z",
+      "receiptId": "TS-MM38CYKW-B4AD",
+      "_hlc": "mm38cylq-0",
+      "_lastSynced": 1772097006371,
+      "_sourceDevice": "device-37a7fe1a",
+      "_serverTimestamp": 1772097006371
+    },
+    "02789ecc-572d-4c39-87ff-3c74dae3b2f5": {
+      "id": "02789ecc-572d-4c39-87ff-3c74dae3b2f5",
+      "items": [
+        {
+          "productId": "083ed8b9-ee87-4450-8863-67425f27fcdd",
+          "name": "Fresh Milk 500ml",
+          "quantity": 4,
+          "price": 75,
+          "subtotal": 300
+        }
+      ],
+      "total": 300,
+      "paymentMethod": "cash",
+      "customerCreditId": null,
+      "profileId": "f97ee647-ec26-4b97-83cf-aef22ce83cdf",
+      "profileName": "minad",
+      "saleTime": "2026-02-26T08:57:57.669Z",
+      "receiptId": "TS-MM38DAXX-4C7C",
+      "_hlc": "mm38dayi-0",
+      "_lastSynced": 1772097006371,
+      "_sourceDevice": "device-37a7fe1a",
+      "_serverTimestamp": 1772097006371
+    }
+  },
+  "credits": {
+    "45f71a77-79bf-48b2-a45c-101538cb1f5b": {
+      "id": "45f71a77-79bf-48b2-a45c-101538cb1f5b",
+      "amount": 1565,
+      "originalAmount": 1565,
+      "customerName": "njeri",
+      "_hlc": "mm38mrks-0",
+      "_lastSynced": 1772096869436,
+      "_sourceDevice": "device-af99322b",
+      "_serverTimestamp": 1772096869436
+    }
+  },
+  "debits": {},
+  "receipts": {}
+}
