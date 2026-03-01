@@ -1,15 +1,13 @@
 /**
  * DukaImara Service Worker v2
  * Cache-first for static assets, network-first for API with offline fallback.
+ * Skips Vite dev server requests (HMR, module loading) to avoid breaking dev mode.
  */
 
 const CACHE_NAME = 'DukaImara-v2';
 const STATIC_ASSETS = [
     '/',
     '/index.html',
-    '/src/styles/index.css',
-    '/src/styles/components.css',
-    '/src/styles/pages.css',
     '/manifest.json',
     '/icons/icon.svg',
 ];
@@ -18,7 +16,14 @@ const STATIC_ASSETS = [
 self.addEventListener('install', (event) => {
     event.waitUntil(
         caches.open(CACHE_NAME).then(cache => {
-            return cache.addAll(STATIC_ASSETS);
+            // Use addAll with ignoring failures for missing assets
+            return Promise.allSettled(
+                STATIC_ASSETS.map(url =>
+                    cache.add(url).catch(err => {
+                        console.warn(`[SW] Failed to cache: ${url}`, err.message);
+                    })
+                )
+            );
         })
     );
     self.skipWaiting();
@@ -40,6 +45,18 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
     const { request } = event;
     const url = new URL(request.url);
+
+    // SKIP: Vite dev server requests — never cache these
+    if (
+        url.pathname.startsWith('/@') ||          // Vite internal (/@vite, /@fs, /@id)
+        url.pathname.startsWith('/node_modules') || // Node modules served by Vite
+        url.pathname.startsWith('/src/') ||         // Source files served by Vite dev
+        url.pathname.includes('?') ||               // Query string requests (HMR updates)
+        url.protocol === 'ws:' ||                   // WebSocket
+        url.protocol === 'wss:'                     // Secure WebSocket
+    ) {
+        return; // Let browser handle normally
+    }
 
     // API calls → network-first
     if (url.pathname.startsWith('/api/')) {

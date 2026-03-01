@@ -138,7 +138,7 @@ function downloadReceipt(receiptId) {
     const styles = getComputedStyle(document.documentElement);
     const bgColor = styles.getPropertyValue('--bg-primary').trim() || '#f8fafc';
     const textColor = styles.getPropertyValue('--text-primary').trim() || '#0f172a';
-    const accentColor = styles.getPropertyValue('--accent-primary').trim() || '#00A9E0';
+    const accentColor = styles.getPropertyValue('--accent-primary').trim() || '#0D9488';
     ctx.fillStyle = bgColor;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     ctx.font = '14px Inter, sans-serif';

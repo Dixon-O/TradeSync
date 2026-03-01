@@ -1,17 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#6366f1"/>
-      <stop offset="100%" style="stop-color:#8b5cf6"/>
+      <stop offset="0%" style="stop-color:#0D9488"/>
+      <stop offset="100%" style="stop-color:#14B8A6"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8553A"/>
+      <stop offset="100%" style="stop-color:#FB7F5E"/>
     </linearGradient>
   </defs>
   <rect width="512" height="512" rx="96" fill="url(#bg)"/>
-  <rect x="100" y="130" width="140" height="252" rx="20" fill="none" stroke="white" stroke-width="18"/>
-  <rect x="272" y="130" width="140" height="252" rx="20" fill="none" stroke="white" stroke-width="18"/>
-  <line x1="170" y1="220" x2="342" y2="220" stroke="white" stroke-width="12" stroke-dasharray="16 12" opacity="0.6"/>
-  <line x1="170" y1="280" x2="342" y2="280" stroke="white" stroke-width="12" stroke-dasharray="16 12" opacity="0.6"/>
-  <line x1="170" y1="340" x2="342" y2="340" stroke="white" stroke-width="12" stroke-dasharray="16 12" opacity="0.6"/>
-  <circle cx="170" cy="170" r="16" fill="white"/>
-  <circle cx="342" cy="170" r="16" fill="white"/>
-  <line x1="240" y1="250" x2="272" y2="250" stroke="#22d3ee" stroke-width="16" stroke-linecap="round"/>
+  <!-- D letter -->
+  <path d="M120 140 h60 q80 0 80 116 q0 116 -80 116 h-60 z M158 178 v156 h22 q48 0 48 -78 q0 -78 -48 -78 z" fill="white"/>
+  <!-- I letter -->
+  <rect x="310" y="140" width="38" height="232" rx="6" fill="white"/>
+  <!-- Decorative dot -->
+  <circle cx="329" cy="110" r="22" fill="url(#accent)"/>
+  <!-- Store roof accent -->
+  <path d="M80 420 L256 380 L432 420" stroke="white" stroke-width="8" fill="none" opacity="0.4" stroke-linecap="round"/>
 </svg>
