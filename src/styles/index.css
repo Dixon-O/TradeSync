@@ -1,30 +1,30 @@
-/* ===== DukaImara Design System v3 — Yoco-Inspired ===== */
-/* Electric blue + clean white, pill buttons, extreme rounding */
+/* ===== DukaImara Design System v3 — Fresh & Premium ===== */
+/* Teal blue-green + coral red-orange + clean whites */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
-/* ===== Light Theme (Default — Yoco style) ===== */
+/* ===== Light Theme (Default) ===== */
 :root,
 [data-theme="light"] {
-  /* Yoco Electric Blue */
-  --accent-primary: #00A9E0;
-  --accent-primary-hover: #0096C7;
-  --accent-primary-light: #E1F5FE;
-  --accent-primary-glow: rgba(0, 169, 224, 0.15);
-  --accent-primary-subtle: #dff3fb;
+  /* DukaImara Teal — Blue-Green Primary */
+  --accent-primary: #0D9488;
+  --accent-primary-hover: #0F766E;
+  --accent-primary-light: #CCFBF1;
+  --accent-primary-glow: rgba(13, 148, 136, 0.15);
+  --accent-primary-subtle: #E6FAF7;
 
-  /* Warm accent (complementary) */
-  --accent-secondary: #FF6B35;
-  --accent-secondary-hover: #E85D2B;
-  --accent-secondary-glow: rgba(255, 107, 53, 0.12);
+  /* Coral — Red-Orange Secondary */
+  --accent-secondary: #E8553A;
+  --accent-secondary-hover: #D44828;
+  --accent-secondary-glow: rgba(232, 85, 58, 0.12);
 
-  /* Backgrounds — clean whites/light greys */
-  --bg-primary: #F8FAFC;
+  /* Backgrounds — clean whites */
+  --bg-primary: #F9FAFB;
   --bg-secondary: #FFFFFF;
   --bg-tertiary: #F1F5F9;
   --bg-card: #FFFFFF;
-  --bg-card-hover: #F8FAFC;
-  --bg-glass: rgba(255, 255, 255, 0.92);
+  --bg-card-hover: #F0FDFA;
+  --bg-glass: rgba(255, 255, 255, 0.94);
   --bg-input: #F1F5F9;
 
   /* Text */
@@ -39,17 +39,17 @@
   --border-focus: var(--accent-primary);
 
   /* Semantic colors */
-  --success: #10B981;
-  --success-bg: rgba(16, 185, 129, 0.08);
-  --success-light: #D1FAE5;
+  --success: #0D9488;
+  --success-bg: rgba(13, 148, 136, 0.08);
+  --success-light: #CCFBF1;
   --warning: #F59E0B;
   --warning-bg: rgba(245, 158, 11, 0.08);
   --warning-light: #FEF3C7;
-  --danger: #EF4444;
-  --danger-bg: rgba(239, 68, 68, 0.08);
-  --danger-light: #FEE2E2;
-  --info: #3B82F6;
-  --info-bg: rgba(59, 130, 246, 0.08);
+  --danger: #E8553A;
+  --danger-bg: rgba(232, 85, 58, 0.08);
+  --danger-light: #FEE8E4;
+  --info: #0891B2;
+  --info-bg: rgba(8, 145, 178, 0.08);
 
   /* M-Pesa & Airtel brand */
   --mpesa-green: #4CAF50;
@@ -57,7 +57,7 @@
   --airtel-red: #E53935;
   --airtel-bg: rgba(229, 57, 53, 0.08);
 
-  /* Shadows — soft Yoco style */
+  /* Shadows — soft & elegant */
   --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
   --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.06);
@@ -84,7 +84,7 @@
   --space-xl: 32px;
   --space-2xl: 48px;
 
-  /* Radii — Yoco's extreme rounding */
+  /* Radii — premium rounded */
   --radius-sm: 8px;
   --radius-md: 14px;
   --radius-lg: 20px;
@@ -106,22 +106,22 @@
 
 /* ===== Dark Theme ===== */
 [data-theme="dark"] {
-  --accent-primary: #00B4D8;
-  --accent-primary-hover: #00A9E0;
-  --accent-primary-light: rgba(0, 180, 216, 0.15);
-  --accent-primary-glow: rgba(0, 180, 216, 0.2);
-  --accent-primary-subtle: rgba(0, 180, 216, 0.1);
+  --accent-primary: #2DD4BF;
+  --accent-primary-hover: #14B8A6;
+  --accent-primary-light: rgba(45, 212, 191, 0.15);
+  --accent-primary-glow: rgba(45, 212, 191, 0.2);
+  --accent-primary-subtle: rgba(45, 212, 191, 0.1);
 
-  --accent-secondary: #FF7F50;
-  --accent-secondary-hover: #FF6B35;
-  --accent-secondary-glow: rgba(255, 127, 80, 0.15);
+  --accent-secondary: #FB7F5E;
+  --accent-secondary-hover: #E8553A;
+  --accent-secondary-glow: rgba(251, 127, 94, 0.15);
 
   --bg-primary: #0B1120;
   --bg-secondary: #111827;
   --bg-tertiary: #1E293B;
   --bg-card: #162032;
-  --bg-card-hover: #1C2A3F;
-  --bg-glass: rgba(11, 17, 32, 0.88);
+  --bg-card-hover: #1A3035;
+  --bg-glass: rgba(11, 17, 32, 0.90);
   --bg-input: #1E293B;
 
   --text-primary: #F1F5F9;
@@ -133,10 +133,10 @@
   --border-light: rgba(255, 255, 255, 0.04);
   --border-focus: var(--accent-primary);
 
-  --success-bg: rgba(16, 185, 129, 0.12);
+  --success-bg: rgba(45, 212, 191, 0.12);
   --warning-bg: rgba(245, 158, 11, 0.12);
-  --danger-bg: rgba(239, 68, 68, 0.12);
-  --info-bg: rgba(59, 130, 246, 0.12);
+  --danger-bg: rgba(232, 85, 58, 0.12);
+  --info-bg: rgba(8, 145, 178, 0.12);
 
   --mpesa-bg: rgba(76, 175, 80, 0.12);
   --airtel-bg: rgba(229, 57, 53, 0.12);
@@ -296,7 +296,7 @@ body {
 }
 
 .btn-success:hover {
-  background: #0DA774;
+  background: #0F766E;
 }
 
 .btn-danger {
